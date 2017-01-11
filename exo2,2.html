@@ -2,9 +2,15 @@
  <html lang="fr">
   <head>
    <meta charset="UTF-8"/>
-    <link rel="stylesheet" media="screen" href="/assets/style.css"/>
+    <style>
+      img{
+        display:block;
+        margin:auto;
+      }
+    </style>
     <script language="javascript">
       var etat = 1;
+      var inter = setInterval(allumer,500);
 function allumer() {
   if(etat == 1){
       document.getElementById('ziz').src='http://www.iut-fbleau.fr/sitebp/web/wim11/js/on.png';
@@ -15,13 +21,10 @@ function allumer() {
     etat = 1;
   }
   }
-     
-</script>
-   <title></title>
+    </script>
   </head>
    <body>
     
-     <img id ="ziz" src="http://www.iut-fbleau.fr/sitebp/web/wim11/js/off.png" onclick="allumer()"/>
-      
+     <img id ="ziz" src="http://www.iut-fbleau.fr/sitebp/web/wim11/js/off.png" onclick="allumer()" />
    </body>
 </html>
